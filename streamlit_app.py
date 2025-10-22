@@ -3,7 +3,7 @@ import requests
 
 st.header("LIVE CURRENCY CONVETER")
 amount = st.number_input("Enter the amount in INR",min_value=1)
-target = st.selectbox("Conver to:",["USD","EUR","GBP","JPY"])
+target = st.selectbox("Conver to:",["USD","EUR","GBP","JPY","INR"])
 
 if st.button("Convert"):
     url = "https://api.exchangerate-api.com/v4/latest/INR"
